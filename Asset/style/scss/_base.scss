@@ -1,0 +1,93 @@
+:root {
+
+  --color-primary: #6e6bf0;
+  --color-primary-light: #b6b5f2;
+  --color-primary-dark: #181831;
+
+
+  --color-white: #f7f7fe;
+  --color-black: #101010;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+
+
+  @media (max-width:77.75em) {
+    & {
+      font-size: 56.5%;
+    }
+  }
+
+  @media (max-width: 59em) {
+    & {
+      font-size: 51%;
+    }
+  }
+
+  @media (max-width: 58em) {
+    & {
+      font-size: 50%;
+    }
+  }
+
+  @media (max-width: 56.25em) {
+    & {
+      font-size: 48%;
+    }
+  }
+
+  @media (max-width: 31.25em) {
+    & {
+      font-size: 43.75%;
+    }
+  }
+
+  @media (max-width: 25em) {
+    & {
+      font-size: 30%;
+    }
+  }
+}
+
+body {
+  font-family: 'Cardo', serif;
+  box-sizing: border-box;
+  color: var(--color-primary-dark);
+  background: var(--color-white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-white);
+}
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.color-text{
+  color: inherit;
+  @media (prefers-color-scheme: dark) {
+      color: var(--color-primary-dark);
+  }
+}
+
+.icon{
+  width: 5rem;
+}
