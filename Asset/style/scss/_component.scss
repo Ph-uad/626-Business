@@ -3,6 +3,11 @@ h1, h2, h3, h4{
     text-transform: capitalize;
    }
    
+
+h1,h2,h3,h4,h5{
+  font-family: 'Roboto', sans-serif;
+}
+
 .heading{
   &-jumbo{
       font-size: 7rem;
@@ -108,19 +113,19 @@ h1, h2, h3, h4{
       text-decoration: none;
       max-width: 20rem;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: bolder;
-      color: var(--color-secondary);
+      color: inherit;
       text-transform: uppercase;
       margin-top: 2rem;
-      padding: 1rem 1.7rem;
-      border: 0.2rem solid var(--color-black);
+      padding: 1rem 0;
+      border-bottom: 0.2rem solid var(--color-black);
       position: relative;
   
       transition: all .4s ease-in-out;
   
       @media (prefers-color-scheme: dark) {
-        background-color: var(--color-white);
+        background-color: inherit;
       }
   
       @media (max-width: 56.25em) {
