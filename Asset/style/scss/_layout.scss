@@ -8,9 +8,14 @@
 
 
     &-container {
+        height: 100%;
         justify-content: space-between;
+        overflow-x: hidden;
+        align-items: center;
         margin: 0 auto;
         padding: 10rem;
+
+      
     }
 
     &-text {
@@ -20,6 +25,7 @@
 
     &-hero {
         flex: 0 1 50%;
+        max-width: 70rem;
     }
 }
 //Header
@@ -87,8 +93,8 @@
     &-container {
         opacity: 1;
         gap: 2rem;
-        max-width: 70%;
-        margin: 5% auto 0 auto;
+        max-width: 90%;
+        margin: 5% auto;
 
         @media (max-width : 60em) {
             & {
@@ -99,6 +105,7 @@
 
     &-img{
         clip-path: polygon(4% 13%, 28% 3%, 82% 4%, 96% 17%, 98% 52%, 96% 77%, 77% 90%, 60% 86%, 44% 75%, 28% 67%, 24% 77%, 36% 89%, 40% 100%, 22% 98%, 12% 90%, 1% 80%, 0 56%);
+        width: 100%;
     }
 
     &-card {
@@ -123,33 +130,30 @@
 
 //About
 .about {
-    margin: 20rem auto ;
-    padding: 5rem 0;
-
-    @media (prefers-color-scheme: dark) {
-        //   background-color: var(--dark-background);
-    }
+   min-height: 40vh;
+   display: flex;
+   align-items: center;
+   margin: 0% auto;
 
     @media (max-width: 56.25em) {
         & {
-            width: 80vw;
+            width: 80%;
         }
     }
 
     &-container {
-        width: 70vw;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
     }
 
     &-story {
-        width: 90%;
+
         margin: 0 auto;
 
         @media (max-width: 56.25em) {
             & {
-                width: 90vw;
+                width: 90%;
             }
         }
 
@@ -213,21 +217,16 @@
 .team {
     padding: 5rem 0;
 
-    @media (prefers-color-scheme: dark) {
-        //   background-color: var(--dark-background);
-    }
-
     &-flex {
         max-width: 85%;
         margin: 0 auto;
-        display: flex;
         align-items: flex-start;
         justify-content: space-between;
 
         @media (max-width:56.25em) {
             & {
                 display: block;
-                margin: 1rem;
+                margin: 1rem;  margin: 0 auto;
             }
         }
     }
@@ -239,6 +238,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 2rem;
+       
 
         @media (max-width:60em) {
             & {
@@ -260,8 +260,7 @@
 
     &-picture {
         flex: 0 1 25%;
-        border-radius: 50%;
-
+      
         @media (max-width: 60em) {
             & {
                 flex: 0 1 90%;
@@ -271,15 +270,17 @@
     }
 
     &-img {
-        width: 100%;
+        max-width: 100%;
         clip-path: circle(48% at 50%);
+        shape-outside: circle(48% at 50%);
         transform: translateY(2px);
+  
 
         @media (max-width: 60em) {
             & {
                 display: flex;
                 justify-content: center;
-                width: 50%;
+                max-width: 70%;
                 margin: 0 auto;
 
             }

@@ -49,13 +49,18 @@ html {
 
   @media (max-width: 31.25em) {
     & {
-      font-size: 43.75%;
+      font-size: 40.75%;
     }
   }
 
   @media (max-width: 25em) {
     & {
       font-size: 30%;
+    }
+  }
+  @media (max-width: 23.44em) {
+    & {
+      font-size: 20%;
     }
   }
 }
@@ -90,4 +95,9 @@ body {
 
 .icon{
   width: 5rem;
+}
+
+svg{
+  width: 20rem;
+  aspect-ratio: 1;
 }
