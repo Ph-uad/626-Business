@@ -14,24 +14,24 @@ gsap.to( ".service-card", {
 }, 
 '-=2'
 )
-gsap.to( ".team-img", {
-    scrollTrigger: {
-        trigger: ".team",
-        start:"centre, center",
-        scrub: 'true',
-        toggleActions: "restart pause reverse pause"
-    }, duration: .5,scale: .5, x: 80 , ease: "bounce"
-}, 
-'-=2'
-)
+// gsap.to( ".team-img", {
+//     scrollTrigger: {
+//         trigger: ".team",
+//         start:"centre, center",
+//         scrub: 'true',
+//         toggleActions: "restart pause reverse pause"
+//     }, duration: .5,scale: .5, x: 80 , ease: "bounce"
+// }, 
+// '-=2'
+// )
 gsap.to( ".header-hero", {
     scrollTrigger: {
         trigger: "body",
         start:"top, top",
-        scrub: '2',
+        scrub: '8',
         end :"bottom bottom",
         toggleActions: "restart pause reverse pause"
-    }, duration: .5, y: 2000 , ease: "bounce"
+    }, duration: .5, y:2000,scale: .5,opacity: .7, zIndex: 1 , ease: "bounce"
 }, 
 '-=2'
 )

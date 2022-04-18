@@ -10,29 +10,40 @@
     &-container {
         height: 100%;
         justify-content: space-between;
-        overflow-x: hidden;
         align-items: center;
         margin: 0 auto;
         padding: 10rem;
 
-      
+        @media (max-width:60em) {
+            &{
+                height: 60%;
+            }
+          }
     }
 
     &-text {
         flex: 0 1 47%;
-        align-self: center;
     }
 
     &-hero {
         flex: 0 1 50%;
         max-width: 70rem;
+
+        @media (max-width:60em) {
+            &{
+                max-width: 50rem;
+            }
+          }
     }
 }
 //Header
 
-
 .sector {
-    margin: 10rem auto ;
+    position: relative;
+    z-index: 10;
+    padding: 10rem;
+    background-color: inherit;
+    margin: 0;
 
     &-flex {
         justify-content: space-around;
@@ -71,18 +82,15 @@
     margin: 10rem auto ;
     padding: 6rem 4rem;
     border-radius: 3rem;
-    border: thick solid transparent;
     box-shadow: -2px -2px 4px var(--color-primary),
                 4px 4px 8px var(--color-primary-dark);
     background-color: var(--color-primary);
-
 
     @media (prefers-color-scheme: dark) {
         background-color: var(--color-primary-dark);
         box-shadow: -2px -2px 4px var(--color-primary-light),
         4px 4px 8px var(--color-primary-dark);
     }
-
 
     @media (max-width:60em) {
         & {
@@ -91,15 +99,12 @@
     }
 
     &-container {
-        opacity: 1;
         gap: 2rem;
         max-width: 90%;
         margin: 5% auto;
 
         @media (max-width : 60em) {
-            & {
-                display: block;
-            }
+            & {display: block;}
         }
     }
 
@@ -133,23 +138,12 @@
    min-height: 40vh;
    display: flex;
    align-items: center;
-   margin: 0% auto;
 
-    @media (max-width: 56.25em) {
-        & {
-            width: 80%;
-        }
-    }
-
-    &-container {
+    &-story {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-    }
-
-    &-story {
-
-        margin: 0 auto;
+        width: 70%;
 
         @media (max-width: 56.25em) {
             & {
@@ -187,7 +181,6 @@
         margin: 0 auto;
         max-width: 60%;
         font-size: 1.6rem;
-
 
         @media (max-width: 60.5em) {
             & {
@@ -290,3 +283,25 @@
 }
 
 //
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-primary-dark);
+    padding: 5rem;
+    font-size: 1.6rem;
+
+    &-icon{
+        padding: 1rem;
+        background-color: var(--color-white);
+        border-radius: 1rem;
+        transform: translateY(30%);
+
+        transition: all .2s ease-in;
+
+        &:hover{
+            transform: translateY(20%);
+        }
+    }
+}
