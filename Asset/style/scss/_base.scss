@@ -21,6 +21,7 @@ html {
   font-size: 62.5%;
   line-height: 1.5;
   scroll-behavior: smooth;
+  transition: all .2s ease-in;
 
 
   @media (max-width:77.75em) {
@@ -70,6 +71,8 @@ body {
   box-sizing: border-box;
   color: var(--color-primary-dark);
   background: var(--color-white);
+
+
 
   @media (prefers-color-scheme: dark) {
     color: var(--color-white);

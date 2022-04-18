@@ -31,7 +31,7 @@ gsap.to( ".header-hero", {
         scrub: '8',
         end :"bottom bottom",
         toggleActions: "restart pause reverse pause"
-    }, duration: .5, y:2000,scale: .5,opacity: .7, zIndex: 1 , ease: "bounce"
+    }, duration: .5, y:2000,scale: .5,opacity: .4, zIndex: 1 , ease: "bounce"
 }, 
 '-=2'
 )

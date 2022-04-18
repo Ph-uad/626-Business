@@ -103,7 +103,7 @@
         max-width: 90%;
         margin: 5% auto;
 
-        @media (max-width : 60em) {
+        @media (max-width : 64em) {
             & {display: block;}
         }
     }
@@ -114,6 +114,8 @@
     }
 
     &-card {
+        position: relative;
+        z-index: 3;
         &__message {
             background: #b9b9cf8b;
             backdrop-filter: blur(10px);
@@ -295,7 +297,7 @@
     &-icon{
         padding: 1rem;
         background-color: var(--color-white);
-        border-radius: 1rem;
+        border-radius: .5rem;
         transform: translateY(30%);
 
         transition: all .2s ease-in;

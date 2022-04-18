@@ -18,6 +18,7 @@ html {
   font-size: 62.5%;
   line-height: 1.5;
   scroll-behavior: smooth;
+  transition: all 0.2s ease-in;
 }
 @media (max-width: 77.75em) {
   html {
@@ -341,7 +342,7 @@ h5 {
   max-width: 90%;
   margin: 5% auto;
 }
-@media (max-width: 60em) {
+@media (max-width: 64em) {
   .pledge-container {
     display: block;
   }
@@ -350,6 +351,10 @@ h5 {
   -webkit-clip-path: polygon(4% 13%, 28% 3%, 82% 4%, 96% 17%, 98% 52%, 96% 77%, 77% 90%, 60% 86%, 44% 75%, 28% 67%, 24% 77%, 36% 89%, 40% 100%, 22% 98%, 12% 90%, 1% 80%, 0 56%);
           clip-path: polygon(4% 13%, 28% 3%, 82% 4%, 96% 17%, 98% 52%, 96% 77%, 77% 90%, 60% 86%, 44% 75%, 28% 67%, 24% 77%, 36% 89%, 40% 100%, 22% 98%, 12% 90%, 1% 80%, 0 56%);
   width: 100%;
+}
+.pledge-card {
+  position: relative;
+  z-index: 3;
 }
 .pledge-card__message {
   background: rgba(185, 185, 207, 0.5450980392);
@@ -500,7 +505,7 @@ h5 {
 .footer-icon {
   padding: 1rem;
   background-color: var(--color-white);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transform: translateY(30%);
   transition: all 0.2s ease-in;
 }
