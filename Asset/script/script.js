@@ -28,10 +28,10 @@ gsap.to( ".header-hero", {
     scrollTrigger: {
         trigger: "body",
         start:"top, top",
-        scrub: '8',
+        scrub: '2',
         end :"bottom bottom",
         toggleActions: "restart pause reverse pause"
-    }, duration: .5, y:2000,scale: .5,opacity: .4, zIndex: 1 , ease: "bounce"
+    },  y:1500, scale:.4,opacity: .4, zIndex: 1 , ease: "bounce"
 }, 
 '-=2'
 )
