@@ -3,7 +3,7 @@
 
 
     @media (prefers-color-scheme: dark) {
-
+        
     }
 
 
@@ -15,6 +15,9 @@
         padding: 10rem;
         background: url(../images/wave.svg) center center/cover no-repeat;
 
+        @media (prefers-color-scheme: dark) {
+            background: url(../images/wave-dark.svg) center center/cover no-repeat;
+        }
         @media (max-width:60em) {
             &{
                 height: 60%;

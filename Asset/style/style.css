@@ -266,6 +266,11 @@ h5 {
   padding: 10rem;
   background: url(../images/wave.svg) center center/cover no-repeat;
 }
+@media (prefers-color-scheme: dark) {
+  .header-container {
+    background: url(../images/wave-dark.svg) center center/cover no-repeat;
+  }
+}
 @media (max-width: 60em) {
   .header-container {
     height: 60%;
