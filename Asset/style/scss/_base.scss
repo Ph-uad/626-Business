@@ -1,12 +1,14 @@
 :root {
 
   --color-primary: #6e6bf0;
-  --color-primary-light: #b6b5f2;
-  --color-primary-dark: #181831;
+  --color-primary-light: #c5c5de;
+  --color-primary-dark: #161627;
 
 
-  --color-white: #f7f7fe;
+  --color-white: #dddde1;
   --color-black: #101010;
+  --body-background: #ccccdd;
+  ;
 }
 
 *,
@@ -19,9 +21,11 @@
 
 html {
   font-size: 62.5%;
-  line-height: 1.5;
+  font-family: 'Lora', serif;
+  line-height: 1.7;
   scroll-behavior: smooth;
-  transition: all .2s ease-in;
+
+  color: var(--color-white);
 
 
   @media (max-width:77.75em) {
@@ -56,28 +60,29 @@ html {
 
   @media (max-width: 25em) {
     & {
-      font-size: 30%;
+      font-size: 38%;
     }
   }
+
   @media (max-width: 23.44em) {
     & {
-      font-size: 20%;
+      font-size: 35%;
     }
   }
 }
 
 body {
-  font-family: 'Lora', serif;
   box-sizing: border-box;
-  color: var(--color-primary-dark);
-  background: var(--color-white);
   scroll-snap-align: y proximity;
-
+  font-size: 1.8rem;
+  word-spacing: .2rem;
+  background: var(--color-primary);
 
 
   @media (prefers-color-scheme: dark) {
     color: var(--color-white);
-}
+    background: var(--color-primary-dark);
+  }
 
 }
 
@@ -90,18 +95,30 @@ body {
   color: var(--color-black);
 }
 
-.color-text{
-  color: inherit;
-  @media (prefers-color-scheme: dark) {
-      color: var(--color-primary-dark);
-  }
+.color-text {
+  color: var(--color-primary-dark);
 }
 
-.icon{
+.icon {
   width: 5rem;
 }
 
-svg{
-  width: 20rem;
-  aspect-ratio: 1;
+.link-description{
+  font-weight: bolder;
+  color: currentColor;
+  padding: .5rem;
+  background-color: #efefef4d;
+  border-radius: 5px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
 }
