@@ -1,0 +1,60 @@
+h1,
+h2{
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.heading {
+    &-jumbo {
+      font-size: 6rem;
+    }
+  
+    &-primary {
+      font-size: 5rem;
+    }
+  
+    &-secondary {
+      font-size: 4rem;
+    }
+  
+    &-tertiary {
+      font-size: 3rem;
+    }
+  
+    &-quadruple {
+      font-size: 2.5rem;
+    }
+  
+    &-quintuple {
+      font-size: 2rem;
+    }
+  }
+
+  .paragraph{
+      font-weight: lighter;
+  }
+
+  .list{
+      &-item{
+          list-style-type:none;
+      }
+  }
+
+  .svg{
+
+      width: 100%;
+      aspect-ratio: 4/1;
+        background: url(../images/SVG/try.svg) no-repeat;
+
+  }

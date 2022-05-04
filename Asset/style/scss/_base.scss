@@ -1,8 +1,6 @@
 :root {
-
-  --color-primary: #6e6bf0;
-  --color-primary-light: #c5c5de;
-  --color-primary-dark: #161627;
+  --color-primary-light: #dbdbdb;
+  --color-primary-dark: #000000;
 
 
   --color-white: #dddde1;
@@ -21,7 +19,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.7;
   scroll-behavior: smooth;
 
@@ -36,37 +34,36 @@ html {
 
   @media (max-width: 59em) {
     & {
-      font-size: 51%;
+      font-size: 60%;
     }
   }
 
   @media (max-width: 58em) {
     & {
-      font-size: 50%;
+      font-size: 58%;
     }
   }
 
   @media (max-width: 56.25em) {
     & {
-      font-size: 48%;
-    }
+      font-size: 56%;
   }
-
+  }
   @media (max-width: 31.25em) {
     & {
-      font-size: 40.75%;
+      font-size: 50.75%;
     }
   }
 
   @media (max-width: 25em) {
     & {
-      font-size: 38%;
+      font-size:48%;
     }
   }
 
   @media (max-width: 23.44em) {
     & {
-      font-size: 35%;
+      font-size: 40%;
     }
   }
 }
@@ -76,14 +73,11 @@ body {
   scroll-snap-align: y proximity;
   font-size: 1.8rem;
   word-spacing: .2rem;
-  background: var(--color-primary);
 
 
   @media (prefers-color-scheme: dark) {
     color: var(--color-white);
-    background: var(--color-primary-dark);
   }
-
 }
 
 ::-webkit-scrollbar {
@@ -106,19 +100,6 @@ body {
 .link-description{
   font-weight: bolder;
   color: currentColor;
-  padding: .5rem;
-  background-color: #efefef4d;
-  border-radius: 5px;
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-}
