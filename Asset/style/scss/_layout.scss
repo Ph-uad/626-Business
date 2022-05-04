@@ -9,9 +9,10 @@
     align-items: center;
     max-width: 90%;
     margin: 0 auto;
+    font-size: 2.2rem;
 
     @media (max-width:60em) {
-      gap: 10rem;
+      gap: 5rem;
     }
   }
 
@@ -19,12 +20,12 @@
     flex: 0 1 45%;
 
     @media (max-width:60em) {
-      flex: 0 1 40%;
+
     }
   }
 
   &-tiles {
-    padding: 40% 1%;
+    padding: 42% 1%;
   }
 
   &-title {
@@ -33,15 +34,12 @@
     }
   }
 
-  &__paragraph {
-    font-size: 2rem;
-  }
 
 
   &-gallery {
-    flex: 0 1 45%;
+    flex: 0 1 50%;
     position: sticky;
-    top: 20%;
+    top: 15%;
     align-self: flex-start;
 
     @media (max-width:60em) {
@@ -49,7 +47,7 @@
     }
 
     &__img {
-      width: 80%;
+      width: 60%;
       height: 100%;
 
       @media (max-width:60em) {
@@ -83,9 +81,6 @@
     flex-direction: column;
 
     &__paragraph {
-
-      margin: 0 4rem;
-
       &:not(:last-child) {
         margin-bottom: 2rem;
       }
@@ -100,10 +95,11 @@
 .objectives {
   font-size: 2rem;
 
-  &-block {
-    margin: 0 4rem;
-
+  &-title{
+    font-style: italic;
   }
+
+
 
   &-paragraph {
     font-size: 2rem;
@@ -117,7 +113,7 @@
 
   &-flex {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 2%;
 
@@ -133,14 +129,8 @@
 
   &-container {
     flex: 0 1 48%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+    justify-self: flex-start;
 
-    &:last-child {
-      margin: 5% auto;
-    }
 
     @media (max-width: 60em) {
       & {
@@ -152,25 +142,33 @@
     }
   }
 
+
   &-profile {
-    flex: 0 1 70%;
-    text-align: left;
+ 
 
     &__title {
-      text-transform: uppercase;
+      text-transform: capitalize;
     }
 
     &__education {
       font-weight: lighter;
     }
+
+    &__essay{
+      margin: 2rem 0;
+    }
   }
 
   &-gallery {
-    flex: 0 1 25%;
+    float:  left;
+    width: 30%;
+    shape-outside: circle(48% at 50%);
+    padding-right: 2rem;
 
     @media (max-width: 60em) {
       & {
-        margin: 0 auto;
+        width: 40%;
+        padding-right: 2rem;
       }
     }
 
@@ -181,11 +179,25 @@
 
       @media (max-width: 60em) {
         & {
-          max-width: 50%;
+          max-width: 70%;
           margin: 0 auto;
         }
       }
     }
+  }
+
+  &-social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-line{
+    display: inline-block;
+    flex:  0 1 90%;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary-dark);
   }
 }
 

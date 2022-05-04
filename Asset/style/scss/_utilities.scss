@@ -13,7 +13,6 @@ h6 {
   line-height: 1.4;
   margin: 0;
   font-weight: 500;
-  text-transform: uppercase;
 }
 .heading {
     &-jumbo {
@@ -42,7 +41,7 @@ h6 {
   }
 
   .paragraph{
-      font-weight: lighter;
+      font-weight: 300;
   }
 
   .list{
@@ -53,8 +52,9 @@ h6 {
 
   .svg{
 
-      width: 100%;
-      aspect-ratio: 4/1;
-        background: url(../images/SVG/try.svg) no-repeat;
+      width: 50%;
+      margin-left: auto;
+      aspect-ratio: 2/1;
+        background: url(../images/SVG/try.svg) left center no-repeat;
 
   }

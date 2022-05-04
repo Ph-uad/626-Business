@@ -110,9 +110,9 @@
   margin: 0 auto;
   overflow: hidden;
 
-  @media (max-with:60rem) {
+  @media (max-width:60em) {
     &{
-      max-width: 80%;
+      width: 90vw;
     }
   }
 }
@@ -121,9 +121,9 @@
   max-width: 70%;
   margin: 15% auto;
 
-  @media (max-with:60rem) {
+  @media (max-width:60em) {
     &{
-      max-width: 80%;
+      max-width: 90%;
     }
 }
 }
