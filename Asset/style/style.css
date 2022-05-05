@@ -359,6 +359,9 @@ body {
   height: 3px;
   background-color: var(--color-primary-dark);
 }
+.team-title {
+  margin-bottom: 5rem;
+}
 
 .footer {
   display: flex;
