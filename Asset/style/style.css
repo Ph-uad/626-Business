@@ -74,121 +74,6 @@ body {
   display: none;
 }
 
-.black {
-  color: var(--color-black);
-}
-
-.color-text {
-  color: var(--color-primary-dark);
-}
-
-.icon {
-  width: 5rem;
-}
-
-.link-description {
-  text-decoration: none;
-  font-weight: bolder;
-  color: currentColor;
-}
-
-.icon {
-  width: 4rem;
-  aspect-ratio: 1;
-  fill: var(--color-black);
-}
-@media (max-width: 60em) {
-  .icon {
-    width: 2.5rem;
-    aspect-ratio: 1;
-  }
-}
-
-.paragraph {
-  font-size: 2rem;
-}
-
-.center {
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-#darkGroup {
-  fill: var(--color-primary);
-}
-
-#light,
-#dark1 {
-  transform: translate(1.5rem);
-  transition: transform 1s ease-in-out;
-}
-
-.service-card:hover #light,
-.service-card:hover #dark1 {
-  transform: translate(0);
-}
-
-.card {
-  padding: 3rem;
-  background: #f0f0f0;
-  border-radius: 5px;
-}
-@media (max-width: 60em) {
-  .card {
-    padding: 3rem 2rem;
-  }
-}
-
-.link, .link:active {
-  display: block;
-  max-width: 12rem;
-  font-size: 1.6rem;
-  font-weight: bolder;
-  color: inherit;
-  text-transform: lowercase;
-  padding: 1rem 0;
-  position: relative;
-  transition: all 0.4s ease-in-out;
-}
-@media (prefers-color-scheme: dark) {
-  .link, .link:active {
-    background-color: inherit;
-  }
-}
-@media (max-width: 56.25em) {
-  .link, .link:active {
-    font-size: 1.4rem;
-    max-width: 15rem;
-  }
-}
-.link:hover, .link:active:hover {
-  transform: translateY(-1rem);
-  box-shadow: 0 5px 3px #555;
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-.flex-row {
-  display: flex;
-}
-@media (max-width: 48em) {
-  .flex-row {
-    flex-direction: column;
-  }
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .fluid-container {
   width: 100vw;
   padding: 7.5% 0;
@@ -361,14 +246,21 @@ body {
 }
 
 .footer {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 5rem;
+  justify-content: space-between;
+  padding: 5rem 0;
   font-size: 1.6rem;
-  background-color: var(--color-primary-dark);
+  border-top: thin solid var(--color-primary-dark);
+}
+.footer-paragraph {
+  display: flex;
+  align-items: center;
 }
 .footer-link {
+  padding-left: 0.5rem;
   display: inline-block;
   margin: 0 auto;
 }
@@ -415,6 +307,7 @@ h6 {
 
 .paragraph {
   font-weight: 300;
+  font-size: 2rem;
 }
 
 .list-item {
@@ -426,4 +319,104 @@ h6 {
   margin-left: auto;
   aspect-ratio: 2/1;
   background: url(../images/SVG/try.svg) left center no-repeat;
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.color-text {
+  color: var(--color-primary-dark);
+}
+
+.icon {
+  width: 5rem;
+}
+
+.link-description {
+  text-decoration: none;
+  font-weight: bolder;
+  color: currentColor;
+}
+
+.icon {
+  width: 4rem;
+  aspect-ratio: 1;
+  fill: var(--color-black);
+}
+@media (max-width: 60em) {
+  .icon {
+    width: 2.5rem;
+    aspect-ratio: 1;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#darkGroup {
+  fill: var(--color-primary);
+}
+
+#light,
+#dark1 {
+  transform: translate(1.5rem);
+  transition: transform 1s ease-in-out;
+}
+
+.service-card:hover #light,
+.service-card:hover #dark1 {
+  transform: translate(0);
+}
+
+.link, .link:active {
+  display: block;
+  max-width: 12rem;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: inherit;
+  text-transform: lowercase;
+  padding: 1rem 0;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+@media (prefers-color-scheme: dark) {
+  .link, .link:active {
+    background-color: inherit;
+  }
+}
+@media (max-width: 56.25em) {
+  .link, .link:active {
+    font-size: 1.4rem;
+    max-width: 15rem;
+  }
+}
+.link:hover, .link:active:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 5px 3px #555;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.flex-row {
+  display: flex;
+}
+@media (max-width: 48em) {
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

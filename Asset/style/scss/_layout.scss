@@ -204,18 +204,23 @@
 
 //
 .footer {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 5rem ;
+  justify-content: space-between;
+  padding: 5rem 0;
   font-size: 1.6rem;
-  background-color: var(--color-primary-dark);
+
+  border-top: thin solid var(--color-primary-dark);
 
   &-paragraph{
-
+    display: flex;
+    align-items: center;
   }
 
   &-link{
+    padding-left: .5rem;
     display: inline-block;
     margin: 0 auto;
     &:hover{
