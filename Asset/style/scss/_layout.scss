@@ -1,5 +1,4 @@
 .header {
-  font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
   background-color: #ecedef;
 
   &-container {
@@ -73,7 +72,6 @@
 
 //About
 .about {
-  font-size: 2.2rem;
 
   &-story {
     margin: 0 auto;
@@ -93,17 +91,15 @@
 
 //service
 .objectives {
-  font-size: 2rem;
 
   &-title{
     font-style: italic;
   }
 
-
-
-  &-paragraph {
-    font-size: 2rem;
+  &-footer{
+    padding-top: 15%;
   }
+
 }
 
 //
@@ -211,7 +207,22 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 5rem;
+  padding: 5rem ;
   font-size: 1.6rem;
   background-color: var(--color-primary-dark);
+
+  &-paragraph{
+
+  }
+
+  &-link{
+    display: inline-block;
+    margin: 0 auto;
+    &:hover{
+      transform: translate(0 , -2px);
+      box-shadow: none;
+    }
+  }
+
+
 }
