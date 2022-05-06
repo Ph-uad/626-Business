@@ -31,8 +31,6 @@
     }
   }
 
-
-
   &-gallery {
     flex: 0 1 50%;
     position: sticky;
@@ -63,6 +61,10 @@
         flex: 0 1 50%;
       }
     }
+  }
+
+  &-link{
+    font-size: 1.8rem;
   }
 }
 
