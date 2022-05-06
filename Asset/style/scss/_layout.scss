@@ -18,9 +18,7 @@
   &-tabs {
     flex: 0 1 45%;
 
-    @media (max-width:60em) {
-
-    }
+    @media (max-width:60em) {}
   }
 
   &-tiles {
@@ -92,11 +90,11 @@
 //service
 .objectives {
 
-  &-title{
+  &-title {
     font-style: italic;
   }
 
-  &-footer{
+  &-footer {
     padding-top: 15%;
   }
 
@@ -123,6 +121,11 @@
     }
   }
 
+
+  &-profile {
+  }
+
+
   &-container {
     flex: 0 1 48%;
 
@@ -141,23 +144,17 @@
 
 
   &-profile {
- 
-
-    &__title {
-      text-transform: capitalize;
-    }
-
     &__education {
       font-weight: lighter;
     }
 
-    &__essay{
+    &__essay {
       margin: 2rem 0;
     }
   }
 
   &-gallery {
-    float:  left;
+    float: left;
     width: 30%;
     shape-outside: circle(48% at 50%);
     padding-right: 2rem;
@@ -183,21 +180,11 @@
     }
   }
 
-  &-social{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  &-line{
+  &-social {
     display: inline-block;
-    flex:  0 1 90%;
-    width: 100%;
-    height: 3px;
-    background-color: var(--color-primary-dark);
   }
 
-  &-title{
+  &-title {
     margin-bottom: 5rem;
   }
 }
@@ -214,17 +201,18 @@
 
   border-top: thin solid var(--color-primary-dark);
 
-  &-paragraph{
+  &-paragraph {
     display: flex;
     align-items: center;
   }
 
-  &-link{
+  &-link {
     padding-left: .5rem;
     display: inline-block;
     margin: 0 auto;
-    &:hover{
-      transform: translate(0 , -2px);
+
+    &:hover {
+      transform: translate(0, -2px);
       box-shadow: none;
     }
   }
