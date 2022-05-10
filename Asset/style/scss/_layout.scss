@@ -63,7 +63,7 @@
     }
   }
 
-  &-link{
+  &-link {
     font-size: 1.8rem;
   }
 }
@@ -123,71 +123,60 @@
     }
   }
 
-
   &-profile {
-  }
 
-
-  &-container {
-    flex: 0 1 48%;
-
-    justify-self: flex-start;
-
-
-    @media (max-width: 60em) {
-      & {
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-      }
-    }
-  }
-
-
-  &-profile {
-    &__education {
-      font-weight: lighter;
-    }
-
-    &__essay {
-      margin: 2rem 0;
-    }
-  }
-
-  &-gallery {
-    float: left;
-    width: 30%;
-    shape-outside: circle(48% at 50%);
-    padding-right: 2rem;
-
-    @media (max-width: 60em) {
-      & {
-        width: 40%;
-        padding-right: 2rem;
-      }
-    }
-
-    &__img {
-      max-width: 100%;
-      clip-path: circle(50% at 50%);
-      shape-outside: circle(48% at 50%);
+    &-container {
+      flex: 0 1 48%;
+      justify-self: flex-start;
 
       @media (max-width: 60em) {
         & {
-          max-width: 70%;
-          margin: 0 auto;
+          flex-direction: column;
+          align-items: center;
+          gap: 4rem;
+          justify-content: space-around;
+
+          &:not(:first-child) {
+            margin-top: 5rem;
+          }
         }
       }
     }
-  }
 
-  &-social {
-    display: inline-block;
-  }
+    &-gallery {
+      float: left;
+      width: 30%;
+      shape-outside: circle(48% at 50%);
+      padding-right: 2rem;
 
-  &-title {
-    margin-bottom: 5rem;
+      @media (max-width: 60em) {
+        & {
+          width: 40%;
+          padding-right: .1rem;
+        }
+      }
+
+      &__img {
+        max-width: 100%;
+        clip-path: circle(50% at 50%);
+        shape-outside: circle(48% at 50%);
+
+        @media (max-width: 60em) {
+          & {
+            max-width: 70%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    &-social {
+      display: inline-block;
+    }
+
+    &-title {
+      margin-bottom: 5rem;
+    }
   }
 }
 

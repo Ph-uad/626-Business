@@ -87,9 +87,12 @@ h6 {
 
   @media (max-width:60em) {
     & {
-      width: 2.5rem;
+      width: 3rem;
       aspect-ratio: 1;
     }
+  }
+  &-link{
+    text-decoration: none;
   }
 }
 
