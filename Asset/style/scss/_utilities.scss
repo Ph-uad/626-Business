@@ -53,7 +53,6 @@ h6 {
 }
 
 .svg {
-
   width: 50%;
   margin-left: auto;
   aspect-ratio: 2/1;
@@ -69,31 +68,31 @@ h6 {
   color: var(--color-primary-dark);
 }
 
-.icon {
-  width: 5rem;
-}
+
+  .icon {
+    display: inline-block;
+    width: 4rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    aspect-ratio: 1;
+    fill: currentColor;
+    @media (max-width:60em) {
+      & {
+        width: 3rem;
+        aspect-ratio: 1;
+      }
+
+    }
+    &-link{
+      text-decoration: none;
+    }
+  }
+
 
 .link-description {
   text-decoration: none;
   font-weight: bolder;
   color: currentColor;
-}
-
-
-.icon {
-  width: 4rem;
-  aspect-ratio: 1;
-  fill: var(--color-black);
-
-  @media (max-width:60em) {
-    & {
-      width: 3rem;
-      aspect-ratio: 1;
-    }
-  }
-  &-link{
-    text-decoration: none;
-  }
 }
 
 //center
@@ -102,10 +101,15 @@ h6 {
 }
 
 //Row
-.row {
+.flex {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  @media (max-width:60em) {
+    &{
+      flex-direction: column;
+    }
+  }
 }
 
 #darkGroup {
@@ -174,4 +178,8 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+iframe{
+  
+  width: 100%;
 }

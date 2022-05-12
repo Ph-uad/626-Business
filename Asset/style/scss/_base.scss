@@ -73,11 +73,6 @@ body {
   scroll-snap-align: y proximity;
   font-size: 1.8rem;
   word-spacing: .2rem;
-
-
-  @media (prefers-color-scheme: dark) {
-    color: var(--color-white);
-  }
 }
 
 ::-webkit-scrollbar {
